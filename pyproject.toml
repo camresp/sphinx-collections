@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sphinxcontrib-collections-tidalsense"
+name = "sphinx-collections-tidalsense"
 
 # !! Don't miss updates in setup.py or related files !!!
 version = "0.0.2"
