@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sphinxcontrib-collections"
+name = "sphinxcontrib-collections-tidalsense"
 
 # !! Don't miss updates in setup.py or related files !!!
 version = "0.0.2"
@@ -8,7 +8,7 @@ description = "Sphinx collections extension for mapping directories and services
 authors = ["team useblocks <info@useblocks.com>"]
 license = "MIT"
 readme = "README.rst"
-repository = "http://github.com/useblocks/sphinxcontrib-collections"
+repository = "http://github.com/camresp/sphinx-collections"
 documentation = "http://sphinx-collections.readthedocs.io/en/latest/"
 classifiers=[
         'Development Status :: 3 - Alpha',
@@ -28,6 +28,11 @@ classifiers=[
 packages = [
     {include = "sphinxcontrib", from = "."}
 ]
+
+[[tool.poetry.source]]
+name = "crispi"
+url = "https://europe-west2-python.pkg.dev/athens-infrastructure/crispi/simple/"
+priority = "explicit"
 
 [tool.poetry.dependencies]
 python = ">3.6.2,<4.0"
@@ -55,6 +60,5 @@ profile = "black"
 docs = ["sphinx"]
 
 [build-system]
-requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@main"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
